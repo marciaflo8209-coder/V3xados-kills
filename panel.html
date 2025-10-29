@@ -20,6 +20,26 @@
   <section class="products">
     <h2>🛒 Productos disponibles</h2>
     <div id="productList"></div>
+  <section class="manual-products">
+  <h2>🛍️ Productos (Añadidos manualmente)</h2>
+
+  <!-- Ejemplo de producto manual -->
+  <div class="product">
+    <img src="ejemplo.jpg" alt="Producto 1" width="100%">
+    <h3>Script VIP</h3>
+    <p>Duración: 30 días</p>
+    <p>Precio: $10</p>
+    <button onclick="comprar('Script VIP', 10, 'LICENCIA-123456')">Comprar</button>
+  </div>
+
+  <!-- Otro ejemplo -->
+  <div class="product">
+    <img src="https://via.placeholder.com/300x150?text=Producto+2" alt="Producto 2" width="100%">
+    <h3>Panel Premium</h3>
+    <p>Duración: 7 días</p>
+    <p>Precio: $5</p>
+    <button onclick="comprar('Panel Premium', 5, 'LICENCIA-789101')">Comprar</button>
+  </div>
   </section>
 
   <section id="ownerPanel" class="admin-panel hidden">
