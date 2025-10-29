@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V3xados Kill - Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="panel-body">
+  <header>
+    <h1 class="neon-red">Bienvenido a V3xados Kill</h1>
+    <button id="logoutBtn">Cerrar sesión</button>
+  </header>
+
+  <section class="user-info">
+    <h2 id="welcomeUser"></h2>
+    <p>💰 Saldo: <span id="userBalance"></span> $</p>
+  </section>
+
+  <section class="products">
+    <h2>🛒 Productos disponibles</h2>
+    <div id="productList"></div>
+  </section>
+
+  <section id="ownerPanel" class="admin-panel hidden">
+    <h2>⚙️ Panel de Administración</h2>
+
+    <div class="admin-actions">
+      <h3>Crear Cuenta</h3>
+      <input id="newUser" placeholder="Usuario">
+      <input id="newPass" placeholder="Contraseña">
+      <button onclick="createAccount()">Crear</button>
+
+      <h3>Modificar Saldo</h3>
+      <select id="userSelect"></select>
+      <input id="amount" type="number" placeholder="Cantidad">
+      <button onclick="addBalance()">➕ Añadir</button>
+      <button onclick="removeBalance()">➖ Quitar</button>
+
+      <h3>Roles</h3>
+      <button onclick="setAdmin(true)">Poner Admin</button>
+      <button onclick="setAdmin(false)">Quitar Admin</button>
+
+      <h3>Usuarios Registrados</h3>
+      <div id="usersList"></div>
+
+      <h3>Borrar Cuenta</h3>
+      <select id="deleteSelect"></select>
+      <button onclick="deleteAccount()">🗑️ Borrar</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+  </html>
