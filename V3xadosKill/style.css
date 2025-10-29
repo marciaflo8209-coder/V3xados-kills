@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  background-color: #0a0000;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  text-align: center;
+  background: rgba(20, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px #ff0000, 0 0 50px #660000;
+}
+
+.titulo {
+  color: #ff0000;
+  text-shadow: 0 0 10px #ff3333, 0 0 20px #ff6666;
+}
+
+.sub {
+  color: #ff5555;
+  text-shadow: 0 0 5px #ff3333;
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #1a0000;
+  color: #fff;
+  outline: none;
+}
+
+button {
+  width: 85%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ff0000, #cc0000, #ff8800);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.copy {
+  color: #ff3333;
+  margin-top: 10px;
+  font-size: 14px;
+}
